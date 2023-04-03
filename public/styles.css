@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 1100px;
+}
+
+.navbar h1{
+  justify-content: space-between;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  border: 1px solid black;
+  padding:0px 50px;
+  background-color:#f4f4f4;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+.navbar h1:hover{
+  border: 1px solid rgb(155, 26, 26);
+}
+
+.navbar h1 a{
+  font-size: 34px;
+  text-decoration: none;
+  color:black;
+font-style: initial;
+}
+.navbar h1 a:hover{
+ color: rgb(155, 26, 26);
+ transition-duration: 0.3s;
+}
+
+.container h1{
+  font-weight: 100;
+}
+.nav a:nth-child(1){
+  padding-right: 30px;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding:60px;
+  margin-bottom: 70px;
+  height: 400px;
+  display: flex;
+  margin-top: 60px;
+
+justify-content: space-between;
+flex-direction: column;}
+.container h1{ 
+  max-width: 65%;
+font-size:35px;
+}
+
+.container a{
+  color:white ;
+  background-color: rgb(155, 26, 26) ;
+  border: none;
+  
+  text-decoration: none;
+  font-size: 19px;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.container a:hover{
+  background-color: rgb(197, 47, 47);
+}
+.create{
+margin-top: 50px;
+display: flex;
+justify-content: center;
+font-size: 40px;
+}
+.name{
+  display: flex;
+}
+.age{
+  display: flex;
+}
+label{
+  margin-left: 70px;
+  font-size: 23px;
+}
+input{
+  height: 29px;
+  width: 200px;
+}
+input:hover{border: 2px solid black;}
+.btn{
+  background-color: rgb(155, 26, 26);
+  color: white;
+outline: none;
+border: none;
+height: 45px;
+width: 200px;
+margin-left: 70px;
+font-size:18px ;
+border-radius: 10px;
+}
+.btn:hover{
+  background-color: rgb(197, 47, 47);
+}
+.name,.age,.btn{
+  margin-top: 40px;
+}
+.error{
+  position: relative;
+  left: 70px;
+  top: 30px;
+  border: 2px red solid;
+  width: 360px;
+  background-color: white;
+  height: 35px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success{
+  position: relative;
+  left: 70px;
+  top: 30px;
+  border: 2px green solid;
+  width: 360px;
+  background-color: white;
+  height: 35px;
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container2 h1{
+  display: flex;
+  justify-content: center;
+  color: darkblue;
+  font-size: 35px;
+}
+.student{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-right: 40px;
+}
+.students-wrapper{
+  border: 1px solid #f4f4f4;
+  margin: 20px;
+  height: 50px;
+  align-items: center; 
+  display: flex;
+  padding-left: 50px;
+  background-color:#f4f4f4;
+  width: 70%;
+  position: relative;
+
+  
+}
+.container2 .students-wrapper{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;}
+.student_age{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.update{
+  text-decoration: none;
+  color: blue;
+  border:1px solid blue;
+  padding: 10px 20px;
+  border-radius: 3px;
+  position: absolute;
+  right: 160px;
+
+  
+}
+span{
+  color: black;
+}
+.delete{
+  float: right;
+  text-decoration: none;
+  color:red;
+  border:1px solid red;
+  padding: 10px 20px;
+  border-radius: 3px;
+  position: absolute;
+  right: 40px;
+}
+.delete:hover{
+  background-color: red;
+  color: white;
+}
+.update:hover{
+  background-color: darkblue;
+  color :white ;
+}
+
+.deleted{
+  max-width: 1100px;
+position: absolute;
+left:70px;
+bottom: 70px;
+font-size: 35px;
+font-style: italic;
+}
+.container2{
+  max-width: 1100px;
+}
+.student_no{
+  margin-left: 70px;
+  font-size: 34px;
+  font-weight: 100;
+  font-style: italic;
+}

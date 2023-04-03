@@ -1,0 +1,17 @@
+extends layout.pug 
+
+block content 
+  h1.create Create a student account
+  if error 
+   p.error Some error occured!
+  if success 
+   p.success Account is successfully created.
+  form.form(action="/create" method='POST')
+    .name
+    label Full name:
+    input(type="text" name="name")
+    .age   
+    label Age :
+    input(type="number" name="age" min="16")
+    .stdnt_create
+    button.btn Create student 

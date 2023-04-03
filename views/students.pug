@@ -1,0 +1,20 @@
+extends layout.pug 
+
+
+block content 
+    if deleted 
+      p.deleted Deleted 
+    .container2 
+      h1 All students 
+    if students.length 
+      each student in students 
+        .students-wrapper 
+         a.student(href=`/students/${student.id}`) FullName : #{student.name}
+         a.student_age(href=`/students/${student.id}`) Age : #{student.age}
+         
+         a.update(href="#") update 
+         a.delete(href=`/${student.id}/delete`) Delete
+    else 
+      p.student_no No any student available
+
+
